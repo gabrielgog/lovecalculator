@@ -1,0 +1,90 @@
+
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+}
+
+
+.heading{
+    font-weight: bolder;
+    line-height: 75px;
+
+}
+
+/* form styles */
+
+#lover1Name{
+
+background: #FFFFFF;
+border: 1.5px solid #000000;
+border-radius: 8px;
+width: 500px;
+height: 60px;
+
+}
+
+#lover2Name{
+background: #FFFFFF;
+border: 1.5px solid #000000;
+border-radius: 8px;
+width: 500px;
+height: 60px;
+margin-top: 3%;
+
+}
+
+#result{
+    color: brown;
+    font-weight: normal;
+}
+
+
+#cal-btn{
+width: 500px;
+height: 78px;
+background: rgba(129, 0, 0, 0.85);
+border-radius: 10px;
+margin-top: 4%;
+color: #fff;
+
+}
+
+
+#background{
+/* Rectangle 14 */
+position: fixed;
+width: 482px;
+height: 443px;
+left: 1180px;
+top: 500px;
+
+background: rgba(129, 0, 0, 0.85);
+border-radius: 147px;
+}
+
+#background1{
+position: fixed;
+width: 482px;
+height: 443px;
+left: -217px;
+top: -89px;
+
+background: #000000;
+border-radius: 196px;
+}
+
+input::placeholder{
+    color: brown;
+    text-align: center;
+}
+
+
+footer{
+    margin-top: 20%;
+    
+}
+
+
+/* Mobile screen only */
