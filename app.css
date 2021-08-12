@@ -1,15 +1,34 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+
+}
+
 
 body{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
   
 
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+    80%{
+        opacity: .5;
+    }
+    
 }
 
 
 .heading{
     font-weight: bolder;
     line-height: 75px;
+    animation: blink 2s linear infinite;
 
 }
 
@@ -55,13 +74,14 @@ color: #fff;
 #background{
 /* Rectangle 14 */
 position: fixed;
-width: 482px;
+width: 500px;
 height: 443px;
 left: 1180px;
 top: 500px;
 
 background: rgba(129, 0, 0, 0.85);
 border-radius: 147px;
+
 }
 
 #background1{
@@ -71,6 +91,7 @@ height: 443px;
 left: -217px;
 top: -89px;
 
+
 background: #000000;
 border-radius: 196px;
 }
@@ -78,6 +99,7 @@ border-radius: 196px;
 input::placeholder{
     color: brown;
     text-align: center;
+    font-size: large;
 }
 
 
@@ -88,3 +110,109 @@ footer{
 
 
 /* Mobile screen only */
+@media all and (max-width: 700px){
+    body{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+      
+    
+    }
+    
+    @keyframes blink {
+        50%{
+            opacity: 0;
+        }
+        80%{
+            opacity: .5;
+        }
+        
+    }
+    
+    
+    .heading{
+        font-weight: bold;
+        line-height: 25px;
+        animation: blink 2s linear infinite;
+        font-size: 25px;
+    
+    }
+    
+    /* form styles */
+    
+    #lover1Name{
+    
+    background: #FFFFFF;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    width: 300px;
+    height: 60px;
+    
+    }
+    
+    #lover2Name{
+    background: #FFFFFF;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    width: 300px;
+    height: 60px;
+    margin-top: 10%;
+    
+    }
+    
+    #result{
+        color: brown;
+        font-weight: normal;
+        font-size: medium;
+    }
+    
+    
+    #cal-btn{
+    width: 300px;
+    height: 78px;
+    background: rgba(129, 0, 0, 0.85);
+    border-radius: 10px;
+    margin-top: 4%;
+    color: #fff;
+    
+    }
+    
+    
+    #background{
+    /* Rectangle 14 */
+    position: fixed;
+    width: 500px;
+    height: 100px;
+    left: 4000px;
+    top: 500px;
+    
+    background: rgba(129, 0, 0, 0.85);
+    border-radius: 147px;
+    
+    }
+    
+    #background1{
+    position: fixed;
+    width: 482px;
+    height: 43px;
+    left: -217px;
+    top: -89px;
+    
+    
+    background: #000000;
+    border-radius: 196px;
+    }
+    
+    input::placeholder{
+        color: brown;
+        text-align: center;
+        font-size: large;
+    }
+    
+    
+    footer{
+        margin-top: 90%;
+        
+    }
+    
+}

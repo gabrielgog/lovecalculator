@@ -1,13 +1,15 @@
+// Okay, let's load the DOM before doing anything with it.
 document.addEventListener("DOMContentLoaded", (event) => {
-  //
 
-  //   This variable holds all the messages being shown for every click.
-  const result = document.getElementById("result");
-  //
+    // A value that shows the user every message they should see
 
+    let result = document.getElementById('result')
+
+//   Generating random number and rounding it up
   let loveScore = Math.random() * 100;
   let loveScoreRound = Math.floor(loveScore) + 1;
 
+//   Holding the form with a vairable and adding an event listener to it
   const form = document.querySelector("form");
   form.addEventListener("submit", (event) => {
     let love = [];
@@ -25,10 +27,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       result.innerHTML = `${loveScoreRound}% Hey, ${love}, I hate to break this to you but I have to. There's no future here. Sorry! `;
     }
 
-    // storing user info in local storage and not allowing the user to check
-    // for a name that has been entered twice.
+    /* storing user info in local storage and not allowing the user to check
+     for a name that has been entered twice. */
     localStorage.setItem("love", JSON.stringify(love));
-    if (localStorage.includes(love)) {
+    if (localStorage[0] === love) {
       alert("You cannot check for thesame lover");
     }
 
