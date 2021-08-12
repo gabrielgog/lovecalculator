@@ -1,218 +1,184 @@
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
-
+*::after {
+  box-sizing: border-box;
 }
 
-
-body{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-  
-
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes blink {
-    50%{
-        opacity: 0;
-    }
-    80%{
-        opacity: .5;
-    }
-    
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
 }
 
-
-.heading{
-    font-weight: bolder;
-    line-height: 75px;
-    animation: blink 2s linear infinite;
-
+.heading {
+  font-weight: bolder;
+  line-height: 75px;
+  animation: blink 2s linear infinite;
 }
 
 /* form styles */
 
-#lover1Name{
-
-background: #FFFFFF;
-border: 1.5px solid #000000;
-border-radius: 8px;
-width: 500px;
-height: 60px;
-
+#lover1Name {
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  border-radius: 8px;
+  width: 500px;
+  height: 60px;
 }
 
-#lover2Name{
-background: #FFFFFF;
-border: 1.5px solid #000000;
-border-radius: 8px;
-width: 500px;
-height: 60px;
-margin-top: 3%;
-
+#lover2Name {
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  border-radius: 8px;
+  width: 500px;
+  height: 60px;
+  margin-top: 3%;
 }
 
-#result{
-    color: brown;
-    font-weight: normal;
+#result {
+  color: brown;
+  font-weight: normal;
 }
 
-
-#cal-btn{
-width: 500px;
-height: 78px;
-background: rgba(129, 0, 0, 0.85);
-border-radius: 10px;
-margin-top: 4%;
-color: #fff;
-
+#cal-btn {
+  width: 500px;
+  height: 78px;
+  background: rgba(129, 0, 0, 0.85);
+  border-radius: 10px;
+  margin-top: 4%;
+  color: #fff;
 }
 
+#background {
+  /* Rectangle 14 */
+  position: fixed;
+  width: 500px;
+  height: 443px;
+  left: 1180px;
+  top: 500px;
 
-#background{
-/* Rectangle 14 */
-position: fixed;
-width: 500px;
-height: 443px;
-left: 1180px;
-top: 500px;
-
-background: rgba(129, 0, 0, 0.85);
-border-radius: 147px;
-
+  background: rgba(129, 0, 0, 0.85);
+  border-radius: 147px;
 }
 
-#background1{
-position: fixed;
-width: 482px;
-height: 443px;
-left: -217px;
-top: -89px;
+#background1 {
+  position: fixed;
+  width: 482px;
+  height: 443px;
+  left: -217px;
+  top: -89px;
 
-
-background: #000000;
-border-radius: 196px;
+  background: #000000;
+  border-radius: 196px;
 }
 
-input::placeholder{
-    color: brown;
-    text-align: center;
-    font-size: large;
+input::placeholder {
+  color: brown;
+  text-align: center;
+  font-size: large;
 }
 
-
-footer{
-    margin-top: 20%;
-    
+footer {
+  margin-top: 20%;
 }
-
 
 /* Mobile screen only */
-@media all and (max-width: 700px){
-    body{
-        text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        
-      
-    
+@media all and (max-width: 700px) {
+  body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
     }
-    
-    @keyframes blink {
-        50%{
-            opacity: 0;
-        }
-        80%{
-            opacity: .5;
-        }
-        
+    80% {
+      opacity: 0.5;
     }
-    
-    
-    .heading{
-        font-weight: bold;
-        line-height: 25px;
-        animation: blink 2s linear infinite;
-        font-size: 19px;
-    
-    }
-    
-    /* form styles */
-    
-    #lover1Name{
-    
-    background: #FFFFFF;
+  }
+
+  .heading {
+    font-weight: bold;
+    line-height: 25px;
+    animation: blink 2s linear infinite;
+    font-size: 19px;
+  }
+
+  /* form styles */
+
+  #lover1Name {
+    background: #ffffff;
     border: 1.5px solid #000000;
     border-radius: 8px;
     width: 300px;
     height: 60px;
-    
-    }
-    
-    #lover2Name{
-    background: #FFFFFF;
+  }
+
+  #lover2Name {
+    background: #ffffff;
     border: 1.5px solid #000000;
     border-radius: 8px;
     width: 300px;
     height: 60px;
     margin-top: 10%;
-    
-    }
-    
-    #result{
-        color: brown;
-        font-weight: normal;
-        font-size: medium;
-    }
-    
-    
-    #cal-btn{
+  }
+
+  #result {
+    color: brown;
+    font-weight: normal;
+    font-size: medium;
+  }
+
+  #cal-btn {
     width: 300px;
     height: 78px;
     background: rgba(129, 0, 0, 0.85);
     border-radius: 10px;
     margin-top: 4%;
     color: #fff;
-    
-    }
-    
-    
-    #background{
-    /* Rectangle 14 */
-    position: absolute;
-width: 85px;
-height: 247px;
-left: 52.3px;
-top: -220px;
+  }
 
-background: rgba(129, 0, 0, 0.85);
-border-radius: 58px;
-transform: rotate(25.46deg)
-    
-    }
-    
-    #background1{
-        position: absolute;
-        width: 245px;
-        height: 200px;
-        left: -73px;
-        top: 516px;
-        
-        background: #000000;
-        border-radius: 58px;
-    }
-    
-    input::placeholder{
-        color: brown;
-        text-align: center;
-        font-size: large;
-    }
-    
-    
-    footer{
-        margin-top: 50%;
-        
-    }
-    
+  #background {
+    /* Rectangle 14 */
+    position: fixed;
+    width: 85px;
+    height: 247px;
+    left: 52.3px;
+    top: -220px;
+
+    background: rgba(129, 0, 0, 0.85);
+    border-radius: 58px;
+    transform: rotate(25.46deg);
+  }
+
+  #background1 {
+    position: absolute;
+    width: 245px;
+    height: 200px;
+    left: -73px;
+    top: 516px;
+
+    background: #000000;
+    border-radius: 58px;
+  }
+
+  input::placeholder {
+    color: brown;
+    text-align: center;
+    font-size: large;
+  }
+  
+
+  footer {
+    margin-top: 50%;
+  }
 }
