@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         juliet `;
     } else if (loveScoreRound > 40) {
       result.innerHTML = `${loveScoreRound}% Hey, ${love}, There will be obstacles, if you want this to work you have to work really hard for it`;
-    } else if (loverScoreRound === 0) {
-      result.innerHTML = `${loverScoreRound}% Hey, ${love}, run for your life`;
-    } else {
+    }  else {
       result.innerHTML = `${loveScoreRound}% Hey, ${love}, I hate to break this to you but I have to. There's no future here. Sorry! `;
     }
 
