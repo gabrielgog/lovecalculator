@@ -134,7 +134,7 @@ footer{
         font-weight: bold;
         line-height: 25px;
         animation: blink 2s linear infinite;
-        font-size: 25px;
+        font-size: 19px;
     
     }
     
@@ -180,27 +180,27 @@ footer{
     
     #background{
     /* Rectangle 14 */
-    position: fixed;
-    width: 500px;
-    height: 100px;
-    left: 4000px;
-    top: 500px;
-    
-    background: rgba(129, 0, 0, 0.85);
-    border-radius: 147px;
+    position: absolute;
+width: 85px;
+height: 247px;
+left: 52.3px;
+top: -220px;
+
+background: rgba(129, 0, 0, 0.85);
+border-radius: 58px;
+transform: rotate(25.46deg)
     
     }
     
     #background1{
-    position: fixed;
-    width: 482px;
-    height: 43px;
-    left: -217px;
-    top: -89px;
-    
-    
-    background: #000000;
-    border-radius: 196px;
+        position: absolute;
+        width: 245px;
+        height: 200px;
+        left: -73px;
+        top: 516px;
+        
+        background: #000000;
+        border-radius: 58px;
     }
     
     input::placeholder{
@@ -211,7 +211,7 @@ footer{
     
     
     footer{
-        margin-top: 90%;
+        margin-top: 50%;
         
     }
     
